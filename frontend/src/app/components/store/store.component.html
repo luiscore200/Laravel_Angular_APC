@@ -1,0 +1,21 @@
+<div class="products-container">
+  
+  <div class="card-list">
+    <div class="card" *ngFor="let objeto of imagesUrl">
+      <img [src]="objeto.url" class="card-img-top" alt="Product Image">
+      <div class="card-info">
+        <div class="static-info">
+          <h3 class="product-title">{{ objeto.image.name }}</h3>
+          <div class="info-details">
+            <p class="store">{{ objeto.image.store }}</p>
+            <p class="price">$ {{ objeto.image.price }}</p>
+          </div>
+        </div>
+        <div class="hover-info">
+          <p class="description">{{ objeto.image.description }}</p>
+          <button class="btn btn-buy">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
